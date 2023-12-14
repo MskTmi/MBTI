@@ -44,7 +44,7 @@ $(document).ready(function () {
     $("input[name='answer']").on("change", function () {
         var answer = $(this).val();
         answers.push(answer);
-        console.log(answers);
+
         var form = $(this).parent().parent().parent();
         var next_form = form.next();
         setTimeout(function () {
@@ -53,7 +53,7 @@ $(document).ready(function () {
         }, 520);
         if (answers.length == 93) {
             var page = ObtainingAnswers(answers)
-            console.log(page);
+
             window.location.href = `./personalities/${page}.html`;
             //$.ajax({
             //    type: 'post',
