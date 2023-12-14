@@ -113,11 +113,14 @@
 div.content {
   font: 800 10.5em/1 'Open Sans', Impact;
   height: 240px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-top: 5%;
+  margin-bottom: 10%;
 }
 
 svg {
-  width: 90%;
-  margin: 0 auto 1150px;
   display: block;
   text-transform: uppercase;
 }
