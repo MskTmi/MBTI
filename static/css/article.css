@@ -1,0 +1,241 @@
+html, body, .article, .header {
+	height: 100%;
+}
+
+/* Header */
+.header {
+	position: relative;
+	margin: 0 auto;
+	min-height: 230px;
+	width: 100%;
+}
+
+
+.title {
+	z-index: 1000;
+	margin: 0 auto;
+	padding: 0 1.25em;
+	width: 100%;
+	text-align: center;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	transform: translateX(-50%) translateY(-50%);
+}
+
+.title h1 {
+	padding: 0 0 0.2em;
+	color: #fff;
+	font-weight: 800;
+	font-size: 3.25em;
+	margin: 0 auto;
+}
+
+.title p {
+	color: #fff;
+	padding: 0 0 0.6em;
+	font-weight: 300;
+	font-size: 0.85em;
+	margin: 0 auto;
+}
+
+.title h1,
+.title p.subline {
+	line-height: 1;
+}
+
+.title p.subline {
+	font-size: 1.75em;
+}
+
+/* Trigger Button */
+button.trigger {
+	position: fixed;
+	bottom: 40px;
+	left: 50%;
+	z-index: 5000;
+	display: block;
+	margin-left: -0.5em;
+	padding: 0;
+	width: 1em;
+	height: 1em;
+	border: none;
+	background: transparent;
+	/*color: transparent;*/
+	font-size: 2em;
+	cursor: pointer;
+}
+
+.article:not(.notrans) button.trigger {
+	-webkit-transition: opacity 0.3s 0.5s;
+	transition: opacity 0.3s 0.5s;
+}
+
+.article.modify:not(.notrans) button.trigger {
+	opacity: 0;
+	pointer-events: none;
+	-webkit-transition-delay: 0s;
+	transition-delay: 0s;
+}
+
+button.trigger::before {
+	position: absolute;
+	bottom: 100%;
+	left: -100%;
+	padding: 0.8em;
+	width: 300%;
+	color: #fff;
+	content: attr(data-info);
+	font-size: 0.35em;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+button.trigger:focus {
+	outline: none;
+}
+
+button.trigger span {
+	position: relative;
+	display: block;
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+}
+
+button.trigger span::before {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	color: #fff;
+	content: "";
+	text-transform: none;
+	font-weight: normal;
+	font-style: normal;
+	font-variant: normal;
+	font-family: 'icomoon';
+	line-height: 1;
+	speak: none;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+/***** Individual effects *****/
+
+/* -------------------------- */
+/* Jam 3 */
+/* -------------------------- */
+.intro-effect-jam3:not(.notrans) .header h1,
+.intro-effect-jam3:not(.notrans) .header p {
+	-webkit-transition-property: color, opacity, -webkit-transform;
+	transition-property: color, opacity, transform;
+}
+
+.intro-effect-jam3:not(.notrans) .content > div {
+	-webkit-transition-property: opacity, -webkit-transform;
+	transition-property: opacity, transform;
+}
+
+.intro-effect-jam3:not(.notrans) .header h1,
+.intro-effect-jam3:not(.notrans) .content > div {
+	-webkit-transition-duration: 0.5s;
+	transition-duration: 0.5s;
+	-webkit-transition-timing-function: cubic-bezier(0.7,0,0.3,1);
+	transition-timing-function: cubic-bezier(0.7,0,0.3,1);
+}
+
+.intro-effect-jam3:not(.notrans) .header p,
+.intro-effect-jam3:not(.notrans) .header p.subline,
+.intro-effect-jam3:not(.notrans) .content > div {
+	-webkit-transition-duration: 0.2s;
+	transition-duration: 0.2s;
+}
+
+.intro-effect-jam3.modify:not(.notrans) .header p,
+.intro-effect-jam3.modify:not(.notrans) .header p.subline,
+.intro-effect-jam3.modify:not(.notrans) .content > div {
+	-webkit-transition-duration: 0.5s;
+	transition-duration: 0.5s;
+}
+
+.intro-effect-jam3.article {
+	padding-top: 120px;
+    font-size: 16px;
+    color: #000;
+}
+
+
+.intro-effect-jam3.modify .header h1 {
+	color: #000;
+}
+
+.intro-effect-jam3 .header p {
+	color: #000;
+	opacity: 0;
+	-webkit-transform: translateY(150px);
+	transform: translateY(150px);
+}
+
+.intro-effect-jam3.modify .header p {
+	opacity: 1;
+	-webkit-transform: translateY(0);
+	transform: translateY(0);
+}
+
+.intro-effect-jam3 .content {
+	padding: 0 5em 5em;
+}
+
+
+.intro-effect-jam3 .content > div {
+	opacity: 0;
+	-webkit-transform: translateY(150px);
+	transform: translateY(150px);
+}
+
+.intro-effect-jam3.modify .content > div {
+	opacity: 1;
+	-webkit-transform: translateY(0);
+	transform: translateY(0);
+}
+
+
+/* Delays */
+.intro-effect-jam3.modify:not(.notrans) .header p:nth-last-child(2) {
+	-webkit-transition-delay: 0.1s;
+	transition-delay: 0.1s;
+}
+
+.intro-effect-jam3.modify:not(.notrans) .header p:last-child {
+	-webkit-transition-delay: 0.15s;
+	transition-delay: 0.15s;
+}
+
+.intro-effect-jam3.modify:not(.notrans) .content > div {
+	-webkit-transition-delay: 0.2s;
+	transition-delay: 0.2s;
+}
+
+/* Media Queries */
+@media screen and (max-width: 47em) {
+	.title, .content {
+		font-size: 70%;
+	}
+}
+
+@media screen and (max-width: 27em) {
+	.intro-effect-jam3 .content {
+		padding: 0 2em 5em;
+	}
+
+	.title, .content {
+		font-size: 50%;
+	}
+
+	button.trigger::before {
+		display: none;
+	}
+}

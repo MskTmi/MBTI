@@ -1,0 +1,96 @@
+﻿<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="A website for MBTI test">
+    <meta name="viewport" content="width=device-width">
+    <meta name="keywords" content="MBTI, mbti">
+    <title>首页|MBTI-TEST</title>
+    <link rel="shortcut icon" href="./static/img/favicon.ico">
+    <link rel="stylesheet" href="./static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./static/css/title.css">
+    <link rel="stylesheet" href="./static/css/startbtn.css">
+    <link rel="stylesheet" href="./static/css/app.css">
+    <script src="./static/js/jquery-3.7.1.min.js"></script>
+    <script src="./static/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./static/js/jquery.cookie.js"></script>
+</head>
+
+<body>
+    <div class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-collapse collapse" id="navbar-main">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="#">首页</a>
+                    </li>
+                    <li>
+                        <a href="./personalities.html">十六种人格简介</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="page-header">
+            <div class="content">
+                <svg viewBox="0 0 1000 300">
+                    <symbol id="s-text">
+                        <text text-anchor="middle" x="50%" y="50%" dy=".2em">
+                            MBTI-TEST
+                        </text>
+                    </symbol>
+                    <use xlink:href="#s-text" class="text"></use>
+                    <use xlink:href="#s-text" class="text"></use>
+                    <use xlink:href="#s-text" class="text"></use>
+                    <use xlink:href="#s-text" class="text"></use>
+                    <use xlink:href="#s-text" class="text"></use>
+                    <use xlink:href="#s-text" class="text"></use>
+                    <clippath id="cp-text">
+                        <text text-anchor="middle" x="50%" y="50%" dy=".2em" class="text--line">
+                            MBTI-TEST
+                        </text>
+                    </clippath>
+                    <g clip-path="url(#cp-text)" class="shadow">
+                        <rect width="100%" height="100%" class="anim-shape anim-shape--shadow"></rect>
+                    </g>
+                    <g clip-path="url(#cp-text)" class="colortext">
+                        <rect width="100%" height="100%" class="anim-shape"></rect>
+                        <rect width="80%" height="100%" class="anim-shape"></rect>
+                        <rect width="60%" height="100%" class="anim-shape"></rect>
+                        <rect width="40%" height="100%" class="anim-shape"></rect>
+                        <rect width="20%" height="100%" class="anim-shape"></rect>
+                    </g>
+                    <use xlink:href="#s-text" class="text--transparent"></use>
+                </svg>
+            </div>
+        </div>
+
+        <div class="bs-docs-section">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="bs-component">
+                        <h2>MBTI测试前须知</h2>
+                        <p>1、参加测试的人员请务必诚实、独立地回答问题，只有如此，才能得到有效的结果。</p>
+                        <p>2、性格分析展示的是你的性格倾向，而不是你的知识、技能、经验。</p>
+                        <p>
+                            3、MBTI提供的性格类型描述仅供测试者确定自己的性格类型之用，性格类型没有好坏，只有不同。每一种性格特征都有其价值和优点，也有缺点和需要注意的地方。清楚地了解自己的性格优劣势，有利于更好地发挥自己的特长，而尽可能的在为人处事中避免自己性格中的劣势，更好地和他人相处，更好地作重要的决策。
+                        </p>
+                        <p>4、共93题；所有题目没有对错之分，请根据自己的实际情况选择。</p>
+                        <p>测试结果仅供参考！</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="./MBTI.html" class="a-btn">
+            <span></span>
+            <span>Start</span>
+            <span>Go!</span>
+        </a>
+    </div>
+</body>
+
+</html>

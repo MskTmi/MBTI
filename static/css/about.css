@@ -1,0 +1,140 @@
+.cs-text-about {
+    width: 600px;
+    margin: 90px auto 30px;
+}
+
+.cs-text-about:before,
+.cs-text-about:after {
+    content: " ";
+    display: table;
+}
+
+.cs-text-about:after {
+    clear: both;
+}
+/* end clearfix hack */
+
+.cs-text-about span{
+    cursor: default;
+    display: block;
+    position: relative;
+    -webkit-backface-visibility: hidden;
+}
+
+.cs-text-about > span {
+    float: left;
+    width: 130px;
+    height: 130px;
+    margin: 10px;
+}
+
+.cs-text-about span span {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(255,255,255,0.2);
+    box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.cs-text-about span span:last-child{
+    font-size: 70px;
+    line-height: 130px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+    color: rgba(255,255,255,0.8);
+    font-family: 'Michroma', sans-serif;
+     -webkit-font-smoothing: antialiased;
+    text-shadow:
+        1px 1px 1px rgba(0,0,0,0.1),
+        -1px -1px 1px rgba(0,0,0,0.1),
+        5px 5px 0 rgba(216,165,40,0.6),
+        -5px -5px 0 rgba(37,166,164,0.6);
+    background: -moz-linear-gradient(45deg, rgba(249,249,249,0.08) 0%, rgba(234,234,234,0.5) 49%, rgba(255,255,255,0.51) 50%, rgba(244,244,244,0.94) 100%);
+    background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,rgba(249,249,249,0.08)), color-stop(49%,rgba(234,234,234,0.5)), color-stop(50%,rgba(255,255,255,0.51)), color-stop(100%,rgba(244,244,244,0.94)));
+    background: -webkit-linear-gradient(45deg, rgba(249,249,249,0.08) 0%,rgba(234,234,234,0.5) 49%,rgba(255,255,255,0.51) 50%,rgba(244,244,244,0.94) 100%);
+    background: -o-linear-gradient(45deg, rgba(249,249,249,0.08) 0%,rgba(234,234,234,0.5) 49%,rgba(255,255,255,0.51) 50%,rgba(244,244,244,0.94) 100%);
+    background: -ms-linear-gradient(45deg, rgba(249,249,249,0.08) 0%,rgba(234,234,234,0.5) 49%,rgba(255,255,255,0.51) 50%,rgba(244,244,244,0.94) 100%);
+    background: linear-gradient(45deg, rgba(249,249,249,0.08) 0%,rgba(234,234,234,0.5) 49%,rgba(255,255,255,0.51) 50%,rgba(244,244,244,0.94) 100%);
+}
+
+.cs-text-about > span:nth-child(odd) span:first-child {
+    -webkit-transform: rotate(5deg) skewY(-14deg);
+    -moz-transform: rotate(5deg) skewY(-14deg);
+    -o-transform: rotate(5deg) skewY(-14deg);
+    -ms-transform: rotate(5deg) skewY(-14deg);
+    transform: rotate(5deg) skewY(-14deg);
+}
+
+.cs-text-about > span:nth-child(even) span:first-child {
+    -webkit-transform: rotate(-35deg) skewY(-5deg);
+    -moz-transform: rotate(-35deg) skewY(-5deg);
+    -o-transform: rotate(-35deg) skewY(-5deg);
+    -ms-transform: rotate(-35deg) skewY(-5deg);
+    transform: rotate(-35deg) skewY(-5deg);
+}
+
+.cs-text-about > span:nth-child(odd) span:nth-child(2) {
+    -webkit-transform: rotate(45deg) skewY(-10deg);
+    -moz-transform: rotate(45deg) skewY(-10deg);
+    -o-transform: rotate(45deg) skewY(-10deg);
+    -ms-transform: rotate(45deg) skewY(-10deg);
+    transform: rotate(45deg) skewY(-10deg);
+}
+
+.cs-text-about > span:nth-child(even) span:nth-child(2) {
+    -webkit-transform: rotate(27deg) skewY(-12deg);
+    -moz-transform: rotate(27deg) skewY(-12deg);
+    -o-transform: rotate(27deg) skewY(-12deg);
+    -ms-transform: rotate(27deg) skewY(-12deg);
+    transform: rotate(27deg) skewY(-12deg);
+}
+
+.cs-text-about > span:nth-child(odd) span:nth-child(3) {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.cs-text-about > span:nth-child(even) span:nth-child(3) {
+    -webkit-transform: rotate(30deg);
+    -moz-transform: rotate(30deg);
+    -o-transform: rotate(30deg);
+    -ms-transform: rotate(30deg);
+    transform: rotate(30deg);
+}
+
+#cs-text-about > span:hover span {
+    -webkit-transform: rotate(0deg) skewY(0deg);
+    -moz-transform: rotate(0deg) skewY(0deg);
+    -o-transform: rotate(0deg) skewY(0deg);
+    -ms-transform: rotate(0deg) skewY(0deg);
+    transform: rotate(0deg) skewY(0deg);
+    text-shadow:
+        1px 1px 0 rgba(216,65,40,0.1),
+        -1px -1px 0 rgba(37,166,164,0.1);
+}
+
+.about{
+    text-align: center;
+}
+
+.about p{
+    margin-top: 150px;
+    font-size: 13px;
+}
+
+.about p span{
+    font-size: 10px;
+    color: gray;
+    opacity: 0.3;
+}

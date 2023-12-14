@@ -1,0 +1,13 @@
+body {
+	background: #ddd url("/static/img/field.jpg") fixed no-repeat top left;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+}
+footer{
+    margin-top: 90px;
+}
+.flashes{
+    margin-top: 90px;
+    text-align: center;
+}

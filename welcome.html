@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Welcome to MBTI-TEST</title>
+    <link rel="stylesheet" type="text/css" href="./static/css/welcome.css" />
+    <script type="text/javascript" src="./static/js/jquery-3.7.1.min.js"></script>
+    <script type="text/javascript" src="./static/js/jquery.lettering.js"></script>
+</head>
+
+<body>
+    <a href="./index.html">
+        <div class="container">
+            <section class="main">
+                <h2 class="cs-text">
+                    <span class="cs-text-cut">Welcome</span>
+                    <span class="cs-text-mid">Biz-MBTI</span>
+                    <span class="cs-text-cut">Welcome</span>
+                </h2>
+            </section>
+            <div class="component">
+                <ul class="grid">
+                    <li class="ot-letter-bottom"><span data-letter="B">B</span></li>
+                    <li class="ot-letter-right"><span data-letter="I">I</span></li>
+                    <li class="ot-letter-top"><span data-letter="Z">Z</span></li>
+                    <li class="ot-letter-left"><span data-letter="-">-</span></li>
+                    <li class="ot-letter-left"><span data-letter="M">M</span></li>
+                    <li class="ot-letter-top"><span data-letter="B">B</span></li>
+                    <li class="ot-letter-bottom"><span data-letter="T">T</span></li>
+                    <li class="ot-letter-right"><span data-letter="I">I</span></li>
+                </ul>
+            </div>
+        </div>
+    </a>
+    <script>
+        $(document).ready(function () {
+            $(".cs-text-cut").lettering('words');
+        });
+    </script>
+</body>
+
+</html>
