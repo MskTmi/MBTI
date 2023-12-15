@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="A website for MBTI test">
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name="keywords" content="MBTI, mbti">
     <title>测试中</title>
     <link rel="shortcut icon" href="./static/img/favicon.ico">
@@ -18,8 +18,12 @@
     <script src="./static/js/MBTI.js"></script>
     <script src="./static/js/printProjectInfo.js"></script>
     <style>
+        body {
+            height: 100%;
+            overflow: hidden;
+        }
+
         .questionbox {
-            height: 100vh;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -28,7 +32,7 @@
 </head>
 
 <body>
-    <div class="navbar navbar-default navbar-fixed-top">
+    <div class="navbar navbar-default" style="margin-bottom: 10em;">
         <div class="container">
             <div class="navbar-header">
                 <a href="./index.html" class="navbar-brand">MBTI</a>

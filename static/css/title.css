@@ -1,4 +1,15 @@
 /* test style */
+@media screen and (max-width: 27em) {
+  p {
+    font-size: 11px;
+  }
+}
+
+
+body {
+  height: 100%;
+}
+
 .text {
   fill: none;
   stroke-width: 6;
@@ -111,13 +122,15 @@
 
 
 div.content {
-  font: 800 10.5em/1 'Open Sans', Impact;
-  height: 240px;
+  font: 800 14em/1 'Open Sans', Impact;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  padding-top: 5%;
-  margin-bottom: 10%;
+
+}
+
+.page-header {
+  padding-top: 50px;
 }
 
 svg {

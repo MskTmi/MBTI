@@ -4,10 +4,12 @@ body {
 	-moz-background-size: cover;
 	background-size: cover;
 }
-footer{
-    margin-top: 90px;
+
+footer {
+	margin-top: 90px;
 }
-.flashes{
-    margin-top: 90px;
-    text-align: center;
+
+.flashes {
+	margin-top: 90px;
+	text-align: center;
 }

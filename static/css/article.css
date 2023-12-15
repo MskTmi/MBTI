@@ -1,5 +1,12 @@
-html, body, .article, .header {
+html,
+body,
+.article,
+.header {
 	height: 100%;
+}
+
+p {
+	font-size: 14px
 }
 
 /* Header */
@@ -134,37 +141,37 @@ button.trigger span::before {
 	transition-property: color, opacity, transform;
 }
 
-.intro-effect-jam3:not(.notrans) .content > div {
+.intro-effect-jam3:not(.notrans) .content>div {
 	-webkit-transition-property: opacity, -webkit-transform;
 	transition-property: opacity, transform;
 }
 
 .intro-effect-jam3:not(.notrans) .header h1,
-.intro-effect-jam3:not(.notrans) .content > div {
+.intro-effect-jam3:not(.notrans) .content>div {
 	-webkit-transition-duration: 0.5s;
 	transition-duration: 0.5s;
-	-webkit-transition-timing-function: cubic-bezier(0.7,0,0.3,1);
-	transition-timing-function: cubic-bezier(0.7,0,0.3,1);
+	-webkit-transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
+	transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
 }
 
 .intro-effect-jam3:not(.notrans) .header p,
 .intro-effect-jam3:not(.notrans) .header p.subline,
-.intro-effect-jam3:not(.notrans) .content > div {
+.intro-effect-jam3:not(.notrans) .content>div {
 	-webkit-transition-duration: 0.2s;
 	transition-duration: 0.2s;
 }
 
 .intro-effect-jam3.modify:not(.notrans) .header p,
 .intro-effect-jam3.modify:not(.notrans) .header p.subline,
-.intro-effect-jam3.modify:not(.notrans) .content > div {
+.intro-effect-jam3.modify:not(.notrans) .content>div {
 	-webkit-transition-duration: 0.5s;
 	transition-duration: 0.5s;
 }
 
 .intro-effect-jam3.article {
 	padding-top: 120px;
-    font-size: 16px;
-    color: #000;
+	font-size: 16px;
+	color: #000;
 }
 
 
@@ -190,13 +197,13 @@ button.trigger span::before {
 }
 
 
-.intro-effect-jam3 .content > div {
+.intro-effect-jam3 .content>div {
 	opacity: 0;
 	-webkit-transform: translateY(150px);
 	transform: translateY(150px);
 }
 
-.intro-effect-jam3.modify .content > div {
+.intro-effect-jam3.modify .content>div {
 	opacity: 1;
 	-webkit-transform: translateY(0);
 	transform: translateY(0);
@@ -214,14 +221,16 @@ button.trigger span::before {
 	transition-delay: 0.15s;
 }
 
-.intro-effect-jam3.modify:not(.notrans) .content > div {
+.intro-effect-jam3.modify:not(.notrans) .content>div {
 	-webkit-transition-delay: 0.2s;
 	transition-delay: 0.2s;
 }
 
 /* Media Queries */
 @media screen and (max-width: 47em) {
-	.title, .content {
+
+	.title,
+	.content {
 		font-size: 70%;
 	}
 }
@@ -231,7 +240,8 @@ button.trigger span::before {
 		padding: 0 2em 5em;
 	}
 
-	.title, .content {
+	.title,
+	.content {
 		font-size: 50%;
 	}
 

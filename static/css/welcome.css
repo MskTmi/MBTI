@@ -5,126 +5,125 @@ body {
     background-size: cover;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
 /*ub open*/
 .cs-text {
-	width: 645px;
-	margin: 120px auto 30px;
-	cursor: pointer;
+    width: 645px;
+    margin: 120px auto 30px;
+    cursor: pointer;
 }
 
-.cs-text > span {
-	display: block;
-	-webkit-backface-visibility: hidden;
+.cs-text>span {
+    display: block;
+    -webkit-backface-visibility: hidden;
 }
 
 .cs-text-cut {
-	width: 100%;
-	height: 90px;
-	overflow: hidden;
-	-webkit-transition: all 0.4s ease-in-out;
-	-moz-transition: all 0.4s ease-in-out;
-	-o-transition: all 0.4s ease-in-out;
-	-ms-transition: all 0.4s ease-in-out;
-	transition: all 0.4s ease-in-out;
+    width: 100%;
+    height: 90px;
+    overflow: hidden;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
 }
 
 .cs-text-cut:first-child {
-	border-top: 1px solid rgba(255,255,255,0.5);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
 }
 
 .cs-text-cut:last-child {
-	border-bottom: 1px solid rgba(255,255,255,0.5);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 }
 
 .cs-text-cut span {
-	display: block;
-	line-height: 180px;
-	color: rgba(255,255,255,1);
-	font-size: 100px;
-	font-weight: 400;
-	text-transform: uppercase;
-	text-align: center;
-	margin-top: 6px;
-	font-family: 'Sancreek', cursive;
-	text-shadow: 7px 2px 0 rgba(255,255,255,0.3);
+    display: block;
+    line-height: 180px;
+    color: rgba(255, 255, 255, 1);
+    font-size: 100px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 6px;
+    font-family: 'Sancreek', cursive;
+    text-shadow: 7px 2px 0 rgba(255, 255, 255, 0.3);
 }
 
 .cs-text-cut:last-child span {
-	margin-top: -84px;
+    margin-top: -84px;
 }
 
 .cs-text-mid {
-	font-weight: 100;
-	text-transform: uppercase;
-	font-size: 50px;
-	letter-spacing: 10px;
-	line-height: 50px;
-	text-indent: 160px;
-	position: absolute;
-	top: 50%;
-	margin-top: -25px;
-	color: rgba(255,255,255,0.3);
-	text-shadow: 0 0 0 rgba(255,255,255,0.9);
-	opacity: 0;
-	-webkit-transform: scale(0.5);
-	-moz-transform: scale(0.5);
-	-o-transform: scale(0.5);
-	-ms-transform: scale(0.5);
-	transform: scale(0.5);
-	-webkit-transition: all 0.4s ease-in-out 0s;
-	-moz-transition: all 0.4s ease-in-out 0s;
-	-o-transition: all 0.4s ease-in-out 0s;
-	-ms-transition: all 0.4s ease-in-out 0s;
-	transition: all 0.4s ease-in-out 0s;
+    font-weight: 100;
+    text-transform: uppercase;
+    font-size: 50px;
+    letter-spacing: 10px;
+    line-height: 50px;
+    text-indent: 160px;
+    position: absolute;
+    top: 50%;
+    margin-top: -25px;
+    color: rgba(255, 255, 255, 0.3);
+    text-shadow: 0 0 0 rgba(255, 255, 255, 0.9);
+    opacity: 0;
+    -webkit-transform: scale(0.5);
+    -moz-transform: scale(0.5);
+    -o-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    transform: scale(0.5);
+    -webkit-transition: all 0.4s ease-in-out 0s;
+    -moz-transition: all 0.4s ease-in-out 0s;
+    -o-transition: all 0.4s ease-in-out 0s;
+    -ms-transition: all 0.4s ease-in-out 0s;
+    transition: all 0.4s ease-in-out 0s;
 }
 
 .cs-text:hover .cs-text-cut:first-child {
-	-webkit-transform: translateY(-25px);
-	-moz-transform: translateY(-25px);
-	-o-transform: translateY(-25px);
-	-ms-transform: translateY(-25px);
-	transform: translateY(-25px);
-	opacity: 0.5;
+    -webkit-transform: translateY(-25px);
+    -moz-transform: translateY(-25px);
+    -o-transform: translateY(-25px);
+    -ms-transform: translateY(-25px);
+    transform: translateY(-25px);
+    opacity: 0.5;
 }
 
 .cs-text:hover .cs-text-cut:last-child {
-	-webkit-transform: translateY(25px);
-	-moz-transform: translateY(25px);
-	-o-transform: translateY(25px);
-	-ms-transform: translateY(25px);
-	transform: translateY(25px);
-	opacity: 0.5;
+    -webkit-transform: translateY(25px);
+    -moz-transform: translateY(25px);
+    -o-transform: translateY(25px);
+    -ms-transform: translateY(25px);
+    transform: translateY(25px);
+    opacity: 0.5;
 }
 
 .cs-text:hover .cs-text-mid {
-	-webkit-transition-delay: 0.3s;
-	-moz-transition-delay: 0.3s;
-	-o-transition-delay: 0.3s;
-	-ms-transition-delay: 0.3s;
-	transition-delay: 0.3s;
-	opacity: 1;
-	-webkit-transform: scale(1);
-	-moz-transform: scale(1);
-	-o-transform: scale(1);
-	-ms-transform: scale(1);
-	transform: scale(1);
+    -webkit-transition-delay: 0.3s;
+    -moz-transition-delay: 0.3s;
+    -o-transition-delay: 0.3s;
+    -ms-transition-delay: 0.3s;
+    transition-delay: 0.3s;
+    opacity: 1;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
 }
 
 
-.container{
-    hidden:100vh;
-	width: 100%;
-	position: relative;
+.container {
+    width: 100%;
+    position: relative;
 }
 
-.main{
-	width: 90%;
-	margin: 0 auto;
-	position: relative;
+.main {
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
 }
 
 
@@ -186,21 +185,53 @@ a{
 
 /* Colors */
 
-.ot-letter-left span { text-shadow: 1px 4px 6px #fff, 0 0 0 hsla(0, 0%, 0%, 0.3), 1px 4px 6px #fff; }
-.ot-letter-left span:after { color: #fff; }
-.ot-letter-left:hover span:after { color: #e8e8e8; }
+.ot-letter-left span {
+    text-shadow: 1px 4px 6px #fff, 0 0 0 hsla(0, 0%, 0%, 0.3), 1px 4px 6px #fff;
+}
 
-.ot-letter-right span { text-shadow: 1px 4px 6px #fff, 0 0 0 hsla(0, 0%, 0%, 0.3), 1px 4px 6px #fff; }
-.ot-letter-right span:after { color: #fff; }
-.ot-letter-right:hover span:after { color: #e8e8e8; }
+.ot-letter-left span:after {
+    color: #fff;
+}
 
-.ot-letter-top span { text-shadow: 1px 4px 6px #fff, 0 0 0 hsla(0, 0%, 0%, 0.3), 1px 4px 6px #fff; }
-.ot-letter-top span:after { color: #fff; }
-.ot-letter-top:hover span:after { color: #e8e8e8; }
+.ot-letter-left:hover span:after {
+    color: #e8e8e8;
+}
 
-.ot-letter-bottom span { text-shadow: 1px 4px 6px #fff, 0 0 0 hsla(0, 0%, 0%, 0.3), 1px 4px 6px #fff; }
-.ot-letter-bottom span:after { color: #fff; }
-.ot-letter-bottom:hover span:after { color: #e8e8e8; }
+.ot-letter-right span {
+    text-shadow: 1px 4px 6px #fff, 0 0 0 hsla(0, 0%, 0%, 0.3), 1px 4px 6px #fff;
+}
+
+.ot-letter-right span:after {
+    color: #fff;
+}
+
+.ot-letter-right:hover span:after {
+    color: #e8e8e8;
+}
+
+.ot-letter-top span {
+    text-shadow: 1px 4px 6px #fff, 0 0 0 hsla(0, 0%, 0%, 0.3), 1px 4px 6px #fff;
+}
+
+.ot-letter-top span:after {
+    color: #fff;
+}
+
+.ot-letter-top:hover span:after {
+    color: #e8e8e8;
+}
+
+.ot-letter-bottom span {
+    text-shadow: 1px 4px 6px #fff, 0 0 0 hsla(0, 0%, 0%, 0.3), 1px 4px 6px #fff;
+}
+
+.ot-letter-bottom span:after {
+    color: #fff;
+}
+
+.ot-letter-bottom:hover span:after {
+    color: #e8e8e8;
+}
 
 .ot-letter-left span:before,
 .ot-letter-left span:after {
@@ -210,9 +241,9 @@ a{
 }
 
 .ot-letter-left span:before {
-    -webkit-transform: scale(1.08,1) skew(0deg,1deg);
-    -ms-transform: scale(1.08,1) skew(0deg,1deg);
-    transform: scale(1.08,1) skew(0deg,1deg);
+    -webkit-transform: scale(1.08, 1) skew(0deg, 1deg);
+    -ms-transform: scale(1.08, 1) skew(0deg, 1deg);
+    transform: scale(1.08, 1) skew(0deg, 1deg);
 }
 
 .ot-letter-left span:after {
@@ -223,9 +254,9 @@ a{
 }
 
 .ot-letter-left:hover span:before {
-    -webkit-transform: scale(0.85,1) skew(0deg,20deg);
-    -ms-transform: scale(0.85,1) skew(0deg,20deg);
-    transform: scale(0.85,1) skew(0deg,20deg);
+    -webkit-transform: scale(0.85, 1) skew(0deg, 20deg);
+    -ms-transform: scale(0.85, 1) skew(0deg, 20deg);
+    transform: scale(0.85, 1) skew(0deg, 20deg);
 }
 
 .ot-letter-left:hover span:after {
@@ -242,9 +273,9 @@ a{
 }
 
 .ot-letter-right span:before {
-    -webkit-transform: scale(0.85,1) skew(0deg,1deg);
-    -ms-transform: scale(0.85,1) skew(0deg,1deg);
-    transform: scale(0.85,1) skew(0deg,1deg);
+    -webkit-transform: scale(0.85, 1) skew(0deg, 1deg);
+    -ms-transform: scale(0.85, 1) skew(0deg, 1deg);
+    transform: scale(0.85, 1) skew(0deg, 1deg);
 }
 
 .ot-letter-right span:after {
@@ -255,9 +286,9 @@ a{
 }
 
 .ot-letter-right:hover span:before {
-    -webkit-transform: scale(0.85,1) skew(0deg,-20deg);
-    -ms-transform: scale(0.85,1) skew(0deg,-20deg);
-    transform: scale(0.85,1) skew(0deg,-20deg);
+    -webkit-transform: scale(0.85, 1) skew(0deg, -20deg);
+    -ms-transform: scale(0.85, 1) skew(0deg, -20deg);
+    transform: scale(0.85, 1) skew(0deg, -20deg);
 }
 
 .ot-letter-right:hover span:after {
@@ -274,9 +305,9 @@ a{
 }
 
 .ot-letter-top span:before {
-    -webkit-transform: scale(1,0.95) skew(-4deg,0deg);
-    -ms-transform: scale(1,0.95) skew(-4deg,0deg);
-    transform: scale(1,0.95) skew(-4deg,0deg);
+    -webkit-transform: scale(1, 0.95) skew(-4deg, 0deg);
+    -ms-transform: scale(1, 0.95) skew(-4deg, 0deg);
+    transform: scale(1, 0.95) skew(-4deg, 0deg);
 }
 
 .ot-letter-top span:after {
@@ -287,9 +318,9 @@ a{
 }
 
 .ot-letter-top:hover span:before {
-    -webkit-transform: translateY(-0.050em) scale(1,0.55) skew(-10deg,0deg);
-    -ms-transform: translateY(-0.050em) scale(1,0.55) skew(-10deg,0deg);
-    transform: translateY(-0.050em) scale(1,0.55) skew(-10deg,0deg);
+    -webkit-transform: translateY(-0.050em) scale(1, 0.55) skew(-10deg, 0deg);
+    -ms-transform: translateY(-0.050em) scale(1, 0.55) skew(-10deg, 0deg);
+    transform: translateY(-0.050em) scale(1, 0.55) skew(-10deg, 0deg);
 }
 
 .ot-letter-top:hover span:after {
@@ -306,9 +337,9 @@ a{
 }
 
 .ot-letter-bottom span:before {
-    -webkit-transform: scale(1,1.05) skew(4deg,0deg);
-    -ms-transform: scale(1,1.05) skew(4deg,0deg);
-    transform: scale(1,1.05) skew(4deg,0deg);
+    -webkit-transform: scale(1, 1.05) skew(4deg, 0deg);
+    -ms-transform: scale(1, 1.05) skew(4deg, 0deg);
+    transform: scale(1, 1.05) skew(4deg, 0deg);
 }
 
 .ot-letter-bottom span:after {
@@ -319,9 +350,9 @@ a{
 }
 
 .ot-letter-bottom:hover span:before {
-    -webkit-transform: translateY(-0.035em) scale(1,1.2) skew(10deg,0deg);
-    -ms-transform: translateY(-0.035em) scale(1,1.2) skew(10deg,0deg);
-    transform: translateY(-0.035em) scale(1,1.2) skew(10deg,0deg);
+    -webkit-transform: translateY(-0.035em) scale(1, 1.2) skew(10deg, 0deg);
+    -ms-transform: translateY(-0.035em) scale(1, 1.2) skew(10deg, 0deg);
+    transform: translateY(-0.035em) scale(1, 1.2) skew(10deg, 0deg);
 }
 
 .ot-letter-bottom:hover span:after {
